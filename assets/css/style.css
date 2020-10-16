@@ -1,0 +1,228 @@
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    background-color :#333333;
+    color: #ffffff;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* DEBUT DU CSS DEBUT DU CSS DEBUT DU CSS DEBUT DU CSS DEBUT DU CSS DEBUT DU CSS DEBUT DU CSS DEBUT DU CSS DEBUT DU CSS DEBUT DU CSS DEBUT DU CSS DEBUT DU CSS DEBUT DU CSS DEBUT DU CSS DEBUT DU CSS DEBUT DU CSS DEBUT DU CSS DEBUT DU CSS DEBUT DU CSS DEBUT DU CSS DEBUT DU CSS DEBUT DU CSS */
+/*REGLAGE BOX SIZING A BORDER BOX*/
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+a, a:hover, a:visited, a:active
+{
+	color:#ffffff;
+	text-decoration:none;
+}
+/* header-ul header-ul header-ul header-ul header-ul header-ul header-ul*/
+.header-ul{
+    display: grid;
+    grid-template-areas: 
+        " . . revise1Table revise1Table revisePlusieursTables revisePlusieursTables testUneTable testUneTable testCinqMultiplication testCinqMultiplication . . "
+        " . . accueil accueil accueil accueil accueil accueil accueil accueil . . ";
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    /*
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    */  
+    
+    height : 25vh;
+    width : 100%;    
+}
+.header-ul > .accueil{
+    grid-area: accueil;
+}
+.header-ul > .revise1Table{
+    grid-area: revise1Table;
+}
+.header-ul > .revisePlusieursTables{
+    grid-area: revisePlusieursTables;
+}
+.header-ul > .testUneTable{
+    grid-area: testUneTable;
+}
+.header-ul > .testCinqMultiplication{
+    grid-area: testCinqMultiplication;
+}
+
+#index{
+    display: grid;
+    grid-template-areas: 
+
+
+        " . . . . . . . . . . . . "
+        " . . h1index h1index h1index h1index . . . . . . "
+        " . . . . . . . . . p2index . . "
+        " . . p1index p1index p1index . . . . p2index . . "
+        " . . p1index p1index p1index . . . . p2index . . "
+        " . . p1index p1index p1index . . . . p2index . . "
+        " . . . . . . . . . p2index . . "
+        " . . . . . . . . . p2index . . "
+        " . . . . . . . . . . . . "
+        " . . . . . . . . . . . . ";
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    /*
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    */  
+    
+    height : 75vh;
+    width : 100%;    
+}
+
+#index > .h1index{
+    grid-area: h1index;
+}
+
+.h1index{
+    font-size: 2em;
+}
+
+#index > .p1index{
+    grid-area: p1index;
+}
+.p1index{
+    font-size: 1.1em;
+}
+
+#index > .p2index{
+    grid-area: p2index;
+}
+.p2index{
+    margin-top: 2.5em;
+    font-size: 1.4em;
+}
+
+
+/* ACCUEIL ACCUEIL ACCUEIL ACCUEIL ACCUEIL ACCUEIL ACCUEIL ACCUEIL ACCUEIL ACCUEIL ACCUEIL ACCUEIL ACCUEIL ACCUEIL ACCUEIL ACCUEIL ACCUEIL ACCUEIL ACCUEIL ACCUEIL ACCUEIL ACCUEIL ACCUEIL ACCUEIL ACCUEIL ACCUEIL ACCUEIL */
+.accueil{
+    font-size: 2.5em;    
+    justify-self: center; 
+}
+.revise1Table{
+    font-size: 1.25em;    
+    align-self: center;
+    justify-self: center; 
+}
+
+.revisePlusieursTables{
+    font-size: 1.25em;    
+    align-self: center;
+    justify-self: center; 
+}
+.testUneTable{
+    font-size: 1.25em;    
+    align-self: center;
+    justify-self: center; 
+}
+.testCinqMultiplication{
+    font-size: 1.25em;
+    align-self: center;
+    justify-self: center; 
+}
+
+
+
+.testUneMultiplication{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.submit{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.reviseUneTable{
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.pReviseUneTable{
+    font-size: 2em;
+    justify-content: center;
+}
+
+.revisePlusieursTables{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testUneMultiplication{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testCinqMultiplication{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* BOUTON DE NAVIGATION QUI SOULIGNE LA OU NOUS SOMMES
+
+BOUTON DESIGN
+
+POLICE DESIGN
+
+Champs de remplissage
