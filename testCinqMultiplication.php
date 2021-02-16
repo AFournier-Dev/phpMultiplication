@@ -1,12 +1,23 @@
 <?php
 session_start();
-$_SESSION['testCinqMultiplication']=['result1' => 0, 'result2' => 0, 'result3' => 0, 'result4' => 0, 'result5' => 0,];?>
+$_SESSION['testCinqMultiplication']=['result1' => 0, 'result2' => 0, 'result3' => 0, 'result4' => 0, 'result5' => 0,];
+?>
 
 <?php require_once 'header.php'; ?>
-   
-<div class="column">
-<form action="" method="POST" class="testCinqMultiplication">
-    <?php
+
+
+
+
+<?php require_once 'footer.php'; ?>
+
+
+
+
+<!-- 
+  
+<div class="column" id="testCinqMultiplication">
+<form action="" method="POST" class="testCinqMultiplication" >
+<?php /*
     for($i=1; $i <=5; $i++){
         $variableA = rand(1,10);
         $variableB = rand(1,10);
@@ -74,3 +85,9 @@ if (!empty($_POST) && isset($_POST['resultProduitTest51'])){
 
 
 </div>
+
+
+
+    
+-->
+ 
