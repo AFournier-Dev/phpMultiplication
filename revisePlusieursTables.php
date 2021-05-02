@@ -18,7 +18,7 @@ padding: 20px;
 text-transform: uppercase;
 border-radius: 6px;
 display: inline-block;
-transition: all 0.3s ease 0s;">Quelle table voulez-vous réviser ?</button>
+transition: all 0.3s ease 0s;">Quelles tables voulez-vous réviser ?</button>
     </form>
 
 

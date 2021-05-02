@@ -90,7 +90,17 @@ a, a:hover, a:visited, a:active {
 
 #index {
     display: grid;
-    grid-template-areas: " . . . . . . . . . . . . " " . . h1index h1index h1index h1index . . . . . . " " . . . . . . . . . p2index . . " " . . p1index p1index p1index . . . . p2index . . " " . . p1index p1index p1index . . . . p2index . . " " . . p1index p1index p1index . . . . p2index . . " " . . . . . . . . . p2index . . " " . . . . . . . . . p2index . . " " . . . . . . . . . . . . " " . . . . . . . . . . . . ";
+    grid-template-areas: 
+    " . . . . . . . . . p2index . . " 
+    " . . h1index h1index h1index h1index . . . p2index . . " 
+    " . . . . . . . . . p2index . . " 
+    " . . p1index p1index p1index . . . . p2index . . " 
+    " . . p1index p1index p1index . . . . p2index . . " 
+    " . . p1index p1index p1index . . . . . . . " 
+    " . . . . . . . . . . . . " 
+    " . . . . . . . . . . . . " 
+    " . . . . . . . . . . . . " 
+    " . . . . . . . . . . . . ";
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     /*
@@ -208,8 +218,12 @@ a, a:hover, a:visited, a:active {
 
 /* BOUTON DE NAVIGATION QUI SOULIGNE LA OU NOUS SOMMES
 
-BOUTON DESIGN
-
 POLICE DESIGN
 
 Champs de remplissage
+
+*/
+
+.header-nav {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

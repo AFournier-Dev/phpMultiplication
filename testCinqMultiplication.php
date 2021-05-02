@@ -36,7 +36,7 @@ padding: 20px;
 text-transform: uppercase;
 border-radius: 6px;
 display: inline-block;
-transition: all 0.3s ease 0s;"type="submit">Quelle sont vos réponses ?</button>
+transition: all 0.3s ease 0s;"type="submit">Quelles sont vos réponses ?</button>
 </form> 
 
 <?php
