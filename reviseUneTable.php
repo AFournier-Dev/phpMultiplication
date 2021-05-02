@@ -3,7 +3,15 @@
 <div class="reviseUneTable">
     <form action="" method="POST" class="formulaire">
         <input type="number" name="table" min="1" max="10" step="1" placeholder="1 à 10" />
-        <button type="submit">Quelle table voulez-vous réviser</button>
+        <button style="border: none;
+background: #404040;
+color: #ffffff !important;
+font-weight: 100;
+padding: 20px;
+text-transform: uppercase;
+border-radius: 6px;
+display: inline-block;
+transition: all 0.3s ease 0s;" type="submit">Quelle table voulez-vous réviser</button>
     </form>
     <p class="pReviseUneTable">
         <?php
@@ -18,66 +26,7 @@
         <?php
                 echo "$table" . ' x ' . "$i" . " = " . "$resultat ";
             }
-
-
-
-            /* switch ($table) {
-        case 1:
-            for ($i=1; $i <= 10 ; $i++) { 
-                $resultat = $i*$table;
-                echo "$i" . 'x' . "$table" . "=" . "$resultat "  ;}
-            break;
-        case 2:
-            for ($i=1; $i <= 10 ; $i++) { 
-                $resultat = $i*$table;
-                echo "$i" . 'x' . "$table" . "=" . "$resultat "  ;}
-            break;
-        case 3:
-            for ($i=1; $i <= 10 ; $i++) { 
-                $resultat = $i*$table;
-                echo "$i" . 'x' . "$table" . "=" . "$resultat "  ;}
-            break;
-        case 4:
-            for ($i=1; $i <= 10 ; $i++) { 
-                $resultat = $i*$table;
-                echo "$i" . 'x' . "$table" . "=" . "$resultat "  ;}
-            break;
-        case 5:
-            for ($i=1; $i <= 10 ; $i++) { 
-                $resultat = $i*$table;
-                echo "$i" . 'x' . "$table" . "=" . "$resultat "  ;}
-            break;
-        case 6:
-            for ($i=1; $i <= 10 ; $i++) { 
-                $resultat = $i*$table;
-                echo "$i" . 'x' . "$table" . "=" . "$resultat "  ;}
-            break;
-        case 7:
-            for ($i=1; $i <= 10 ; $i++) { 
-                $resultat = $i*$table;
-                echo "$i" . 'x' . "$table" . "=" . "$resultat "  ;}
-            break;
-        case 8:
-            for ($i=1; $i <= 10 ; $i++) { 
-                $resultat = $i*$table;
-                echo "$i" . 'x' . "$table" . "=" . "$resultat "  ;}
-            break;
-        case 9:
-            for ($i=1; $i <= 10 ; $i++) { 
-                $resultat = $i*$table;
-                echo "$i" . 'x' . "$table" . "=" . "$resultat "  ;}
-            break;
-        case 10:
-            for ($i=1; $i <= 10 ; $i++) { 
-                $resultat = $i*$table;
-                echo "$i" . 'x' . "$table" . "=" . "$resultat "  ;}
-            break;
-
         }
-            */
-        }
-
-
         ?>
 
 </div>

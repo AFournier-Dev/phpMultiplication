@@ -9,6 +9,8 @@ function loadData() {
     httpRequest.open("GET", "ajax_info.txt", true);
     httpRequest.send();
 }
+
+
 // addevenlister TEST de l'ecoute du SUBMIT button
 
 // recup donne du formulaire

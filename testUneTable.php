@@ -9,8 +9,15 @@ $_SESSION['testUnetable'] = ['result1' => 0, 'result2' => 0, 'result3' => 0, 're
     <div class="submit">
         <form action="" method="POST">
             <input type="number" name="table" min="1" max="10" step="1" placeholder="1 à 10" />
-            <br>
-            <button type="submit">Quelle table voulez-vous tester ?</button>
+            <button style="border: none;
+background: #404040;
+color: #ffffff !important;
+font-weight: 100;
+padding: 20px;
+text-transform: uppercase;
+border-radius: 6px;
+display: inline-block;
+transition: all 0.3s ease 0s;" type="submit">Quelle table voulez-vous tester ?</button>
             <br>
         </form>
     </div>

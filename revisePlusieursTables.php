@@ -9,34 +9,43 @@
         }
 
         ?>
-        <button>Quelle table voulez-vous réviser ?</button>
+
+        <button class="button_a" style="border: none;
+background: #404040;
+color: #ffffff !important;
+font-weight: 100;
+padding: 20px;
+text-transform: uppercase;
+border-radius: 6px;
+display: inline-block;
+transition: all 0.3s ease 0s;">Quelle table voulez-vous réviser ?</button>
     </form>
 
 
     <p>
-    <?php
-    if (isset($_POST['table'])) {
-    
-        foreach ($_POST['table'] as $key => $value) {
+        <?php
+        if (isset($_POST['table'])) {
+
+            foreach ($_POST['table'] as $key => $value) {
         ?>
-            <br class="arevise"><br>
-    <?php
-            for ($i = 1; $i <= 10; $i++) {
-                ?>
-                 <p class="revisePLSTables<?php $i ?>">
+                <br class="arevise"><br>
                 <?php
-                $resultat = $i * $value;
-                echo "$value" . ' x ' . "$i" . " = " . "$resultat ";
+                for ($i = 1; $i <= 10; $i++) {
                 ?>
-                </p>
-               <?php
-                
+    <p class="revisePLSTables<?php $i ?>">
+        <?php
+                    $resultat = $i * $value;
+                    echo "$value" . ' x ' . "$i" . " = " . "$resultat ";
+        ?>
+    </p>
+<?php
+
+                }
             }
         }
-    }
-    ?>
-    </p> <br>
-    
+?>
+</p> <br>
+
 </div>
 
 

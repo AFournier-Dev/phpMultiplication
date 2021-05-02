@@ -3,11 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="assets/picture/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/pictures/favicon.png">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>tabes de multiplication </title>
-    <link rel="icon" href="assets/picture/favicon.png" />
+    <title>tables de multiplication </title>
+
 
 </head>
 

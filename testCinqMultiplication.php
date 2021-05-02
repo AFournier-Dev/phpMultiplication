@@ -13,11 +13,11 @@ $_SESSION['testCinqMultiplication']=['result1' => 0, 'result2' => 0, 'result3' =
 
 
 
-<!-- 
+
   
 <div class="column" id="testCinqMultiplication">
 <form action="" method="POST" class="testCinqMultiplication" >
-<?php /*
+<?php 
     for($i=1; $i <=5; $i++){
         $variableA = rand(1,10);
         $variableB = rand(1,10);
@@ -28,7 +28,15 @@ $_SESSION['testCinqMultiplication']=['result1' => 0, 'result2' => 0, 'result3' =
         <?php 
         }
         ?>
-        <button type="submit">Quelle sont vos réponses ?</button>
+        <button style="border: none;
+background: #404040;
+color: #ffffff !important;
+font-weight: 100;
+padding: 20px;
+text-transform: uppercase;
+border-radius: 6px;
+display: inline-block;
+transition: all 0.3s ease 0s;"type="submit">Quelle sont vos réponses ?</button>
 </form> 
 
 <?php
@@ -89,5 +97,5 @@ if (!empty($_POST) && isset($_POST['resultProduitTest51'])){
 
 
     
--->
+
  
